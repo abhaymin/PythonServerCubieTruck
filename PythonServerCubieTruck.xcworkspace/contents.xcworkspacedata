@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:myConfig.ini">
+   </FileRef>
+   <FileRef
+      location = "group:NetworkHandler">
+   </FileRef>
+   <FileRef
+      location = "group:ProjectHandler">
+   </FileRef>
+   <FileRef
+      location = "group:pyWebNoip.py">
+   </FileRef>
+   <FileRef
+      location = "group:testModule.py">
+   </FileRef>
+</Workspace>

@@ -27,10 +27,10 @@ class TransimissionHandler():
             _tranServer = configRd.ConfigSectionMap("MyTransmission", 'transerver')
             _tranPort = configRd.ConfigSectionMap("MyTransmission", 'tranport')
             self._client = transmissionrpc.Client(_tranServer, port=int(_tranPort), user=_tranUser, password=_tranPwd)
-            self._torrents = _client.info()
+            self._torrents = self._client.info()
         except Exception, e:
             errorHandle("Error in connect Torrent Server - %s" % str(e))
-            rasie
+            raise
 
     def gettorrentdownloadinglist(self):
         try:
